@@ -7,7 +7,15 @@ package listas;
 public class Principal {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Datos
+        Mascota m1 = new Mascota("princesa", "cocker", 2, "hembra", "mediano", "cafe");
+        Mascota m2 = new Mascota("toto", "beangle", 4, "macho", "mediano", "blanco");
+        Mascota m3 = new Mascota("perla", "labrador", 5, "hembra", "grande", "canela");
+        Mascota m4 = new Mascota("chucho", "terrier", 7, "macho", "grande", "negro");
+        Mascota m5 = new Mascota("negro", "coker", 3, "macho", "mediano", "negro");
+        Mascota m6 = new Mascota("niebla", "beagle", 2, "hembra", "mediano", "cafe");
+        
+        m2.mostrar();
     }
     
 }
