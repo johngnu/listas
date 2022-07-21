@@ -20,6 +20,11 @@ public class Almacen {
         this.direccion = direccion;
         this.listaProductos = listaProductos;
     }
+    
+    public void mostrar() {
+        System.out.println("codigo: " + codAlmacen + " responsable: " + nombreResponsable + " direccion: " + direccion);
+        listaProductos.mostrarLD();
+    }
 
     public int getCodAlmacen() {
         return codAlmacen;

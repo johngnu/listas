@@ -33,5 +33,12 @@ public class Principal {
         ld1.mostrarLD();
         ld2.mostrarLD();
         ld3.mostrarLD();
+        
+        Almacen a1 = new Almacen(1, "luis", "Loaysa 10", ld1);
+        Almacen a2 = new Almacen(2, "pedro", "Arce 22", ld2);
+        Almacen a3 = new Almacen(3, "luz", "Camacho 11", ld3);
+        
+        a1.mostrar();
+        
     }
 }
