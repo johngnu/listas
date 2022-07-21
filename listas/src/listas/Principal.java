@@ -25,8 +25,7 @@ public class Principal {
         
         lsc.mostrarLSC2();
         
-        // b) dividir la lista
-        System.out.println("B) ___________________");
+        System.out.println("\n B) ___________________");
         ListaSC lmachos = dividir(lsc, "macho");
         ListaSC lhembras = dividir(lsc, "hembra");
         
@@ -35,6 +34,9 @@ public class Principal {
         
         System.out.println("Lista hebras: ");
         lhembras.mostrarLSC2();
+        
+        System.out.println("\n C) ___________________");
+        promedioEdad(lhembras);
     }
     
     public static ListaSC dividir(ListaSC lsc, String sexo) {        
@@ -49,8 +51,14 @@ public class Principal {
         return ln;
     }
     
-    public static void promedioEdad() {
-        
+    public static void promedioEdad(ListaSC lsc) {
+        Nodo q = lsc.getP();
+        int sum = 0;
+        for (int i = 0; i < lsc.nroNodos(); i++) {
+            sum = sum + q.getDato().getEdad();            
+            q = q.getSig();
+        }
+        System.out.println("El promedio de edad es: " + (sum/lsc.nroNodos()));
     }
     
 }
