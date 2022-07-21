@@ -15,7 +15,15 @@ public class Principal {
         Mascota m5 = new Mascota("negro", "coker", 3, "macho", "mediano", "negro");
         Mascota m6 = new Mascota("niebla", "beagle", 2, "hembra", "mediano", "cafe");
         
-        m2.mostrar();
+        ListaSC lsc = new ListaSC();
+        lsc.adiFinalLSC(m1);
+        lsc.adiFinalLSC(m2);
+        lsc.adiFinalLSC(m3);
+        lsc.adiFinalLSC(m4);
+        lsc.adiFinalLSC(m5);
+        lsc.adiFinalLSC(m6);
+        
+        lsc.mostrarLSC2();
     }
     
 }
