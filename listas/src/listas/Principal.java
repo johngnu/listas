@@ -24,6 +24,33 @@ public class Principal {
         lsc.adiFinalLSC(m6);
         
         lsc.mostrarLSC2();
+        
+        // b) dividir la lista
+        System.out.println("B) ___________________");
+        ListaSC lmachos = dividir(lsc, "macho");
+        ListaSC lhembras = dividir(lsc, "hembra");
+        
+        System.out.println("Lista machos: ");
+        lmachos.mostrarLSC2();
+        
+        System.out.println("Lista hebras: ");
+        lhembras.mostrarLSC2();
+    }
+    
+    public static ListaSC dividir(ListaSC lsc, String sexo) {        
+        ListaSC ln = new ListaSC();
+        Nodo q = lsc.getP();
+        for (int i = 0; i < lsc.nroNodos(); i++) {
+            if(q.getDato().getSexo().equals(sexo)) {
+                ln.adiFinalLSC(q.getDato());
+            }
+            q = q.getSig();
+        }
+        return ln;
+    }
+    
+    public static void promedioEdad() {
+        
     }
     
 }
