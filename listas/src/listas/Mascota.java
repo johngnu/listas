@@ -26,7 +26,7 @@ public class Mascota {
     }
 
     public void mostrar() {
-        System.out.println("nombre: " + nombre + " raza" + raza + " edad: " + edad
+        System.out.println("nombre: " + nombre + " raza: " + raza + " edad: " + edad
                 + " sexo: " + sexo + " tamanio: " + tamanio + " color: " + color);
     }
 
