@@ -21,6 +21,10 @@ public class Producto {
         this.precio = precio;
     }
 
+    public void mostrar() {
+        System.out.println("nombre: " + nombre + " categoria: " + categoria + " stock: " + stock + " precio: " + precio);
+    }
+
     public String getNombre() {
         return nombre;
     }
