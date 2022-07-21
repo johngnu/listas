@@ -45,4 +45,8 @@ public class Principal {
         
         lsa.mostrarListaSimple();
     }
+    
+    public static void mostrarCategoria(ListaS lsa, String x) {
+        
+    }
 }
